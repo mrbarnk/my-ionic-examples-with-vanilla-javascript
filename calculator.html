@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://unpkg.com/@ionic/core@latest/dist/ionic.js"></script>
+    <link href="https://unpkg.com/@ionic/core@latest/css/ionic.bundle.css" rel="stylesheet">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <ion-app>
+        <ion-header>
+            <ion-toolbar color="danger">
+                <ion-title>
+                    MRBARNK TECHS
+                </ion-title>
+            </ion-toolbar>
+        </ion-header>
+        <ion-content>
+            <ion-grid>
+                <ion-row>
+                    <ion-col size-md="6" offset-md="3">
+                        <ion-card>
+                            <ion-card-header>
+                                <ion-card-title>
+                                    <ion-item>
+                                        <form name="calculator">
+                                            <ion-input type="text" name="answer" placeholder="Answer" readonly="true">
+                                            </ion-input>
+                                        </form>
+                                    </ion-item>
+                                </ion-card-title>
+                            </ion-card-header>
+                            <ion-card-content>
+                                <form>
+                                    <ion-item>
+                                        <ion-input type="button" value=" 1 " onclick="calculator.answer.value += '1'">
+                                        </ion-input>
+                                        <ion-input type="button" value=" 2 " onclick="calculator.answer.value += '2'">
+                                        </ion-input>
+                                        <ion-input type="button" value=" 3 " onclick="calculator.answer.value += '3'">
+                                        </ion-input>
+                                        <ion-input type="button" value=" + " onclick="calculator.answer.value += '+'">
+                                        </ion-input>
+                                    </ion-item>
+
+                                    <ion-item>
+                                        <ion-input type="button" value=" 4 " onclick="calculator.answer.value += '4'">
+                                        </ion-input>
+                                        <ion-input type="button" value=" 5 " onclick="calculator.answer.value += '5'">
+                                        </ion-input>
+                                        <ion-input type="button" value=" 6 " onclick="calculator.answer.value += '6'">
+                                        </ion-input>
+                                        <ion-input type="button" value=" - " onclick="calculator.answer.value += '-'">
+                                        </ion-input>
+                                    </ion-item>
+
+
+                                    <ion-item>
+                                        <ion-input type="button" value=" 7 " onclick="calculator.answer.value += '7'">
+                                        </ion-input>
+                                        <ion-input type="button" value=" 8 " onclick="calculator.answer.value += '8'">
+                                        </ion-input>
+                                        <ion-input type="button" value=" 9 " onclick="calculator.answer.value += '9'">
+                                        </ion-input>
+                                        <ion-input type="button" value=" x " onclick="calculator.answer.value += '*'">
+                                        </ion-input>
+                                    </ion-item>
+                                    <ion-item>
+                                        <ion-input type="button" value=" c " onclick="calculator.answer.value = ''">
+                                        </ion-input>
+                                        <ion-input type="button" value=" 0 " onclick="calculator.answer.value += '0'">
+                                        </ion-input>
+                                        <ion-input type="button" value=" = "
+                                            onclick="calculator.answer.value = eval(calculator.answer.value)">
+                                        </ion-input>
+                                        <ion-input type="button" value=" / " onclick="calculator.answer.value += '/'">
+                                        </ion-input>
+                                    </ion-item>
+                                </form>
+                            </ion-card-content>
+                        </ion-card>
+                    </ion-col>
+                </ion-row>
+
+            </ion-grid>
+        </ion-content>
+    </ion-app>
+</body>
+
+</html>
